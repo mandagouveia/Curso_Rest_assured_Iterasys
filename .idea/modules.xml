@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PetStore.iml" filepath="$PROJECT_DIR$/.idea/modules/PetStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PetStore.main.iml" filepath="$PROJECT_DIR$/.idea/modules/PetStore.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/temp/PetStore.temp.iml" filepath="$PROJECT_DIR$/.idea/modules/temp/PetStore.temp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PetStore.test.iml" filepath="$PROJECT_DIR$/.idea/modules/PetStore.test.iml" />
+    </modules>
+  </component>
+</project>

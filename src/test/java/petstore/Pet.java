@@ -41,9 +41,9 @@ public class Pet {
         .then()  // Então
                 .log().all()
                 .statusCode(200)
-                .body("name", is("Atena"))
+                .body("name", is("Valentina"))
                 .body("status", is("available"))
-                .body("category.name", is("AX2345LORT"))
+                .body("category.name", is("AX2345LORTA"))
                 .body("tags.name", contains("data"))
         ;
 
@@ -52,7 +52,7 @@ public class Pet {
 
     @Test(priority=2)
     public void consultarPet(){
-        String petId = "1974080145";
+        String petId = "1974080148";
 
         String token =
         given()
@@ -109,6 +109,23 @@ public class Pet {
 
         ;
     }
+    @Test
+    public void consultarPetPorStatus(){
+        String status = "available";
 
+        given()
+                .contentType("application/json")
+                .log().all()
+        .when()
+                .get(uri+"/findByStatus?status="+status)
+        .then()
+                .log().all()
+                .statusCode(200)
+
+
+        ;
+
+
+    }
 
 }
