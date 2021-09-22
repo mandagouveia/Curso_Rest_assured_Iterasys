@@ -63,8 +63,8 @@ public class Pet {
         .then()
                 .log().all()
                 .statusCode(200)
-                .body("name", is("Atena"))
-                .body("category.name", is("AX2345LORT"))
+                .body("name", is("Valentina"))
+                .body("category.name", is("AX2345LORTA"))
                 .body("status",is("available"))
         .extract()
                 .path("category.name")
@@ -86,7 +86,7 @@ public class Pet {
         .then()
                 .log().all()
                 .statusCode(200)
-                .body("name", is("Atena"))
+                .body("name", is("Valentina"))
                 .body("status",is("sold"))
         ;
     }
@@ -109,7 +109,7 @@ public class Pet {
 
         ;
     }
-    @Test
+    @Test (priority = 5)
     public void consultarPetPorStatus(){
         String status = "available";
 
