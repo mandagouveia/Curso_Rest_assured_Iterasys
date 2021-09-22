@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="datadriven.UserDD" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-09-22T03:09:21" hostname="DESKTOP-C8PH7F7" time="5.619">
+  <properties/>
+  <testcase name="incluirUsuario[0](1001, Amandinha, Amanda, Ramos, teste@teste.com.br, 123456, 81999999999, 0)" classname="datadriven.UserDD" time="4.759"/>
+  <testcase name="incluirUsuario[1](1002, lucy, lucy, carter, lucycarter@teste.com, 654321, 11888888888, 0)" classname="datadriven.UserDD" time="0.86"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Amanda",
+    "lastName": "Ramos",
+    "password": "123456",
+    "userStatus": "0",
+    "phone": "81999999999",
+    "id": "1001",
+    "email": "teste@teste.com.br",
+    "username": "Amandinha"
+}
+HTTP/1.1 200 OK
+Date: Wed, 22 Sep 2021 03:09:21 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1001"
+}
+o userID Ã© 1001
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "lucy",
+    "lastName": "carter",
+    "password": "654321",
+    "userStatus": "0",
+    "phone": "11888888888",
+    "id": "1002",
+    "email": "lucycarter@teste.com",
+    "username": "lucy"
+}
+HTTP/1.1 200 OK
+Date: Wed, 22 Sep 2021 03:09:23 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1002"
+}
+o userID Ã© 1002
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
