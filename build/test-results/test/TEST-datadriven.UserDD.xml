@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="datadriven.UserDD" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-09-22T03:09:21" hostname="DESKTOP-C8PH7F7" time="5.619">
+<testsuite name="datadriven.UserDD" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-09-27T20:03:04" hostname="DESKTOP-C8PH7F7" time="35.363">
   <properties/>
-  <testcase name="incluirUsuario[0](1001, Amandinha, Amanda, Ramos, teste@teste.com.br, 123456, 81999999999, 0)" classname="datadriven.UserDD" time="4.759"/>
-  <testcase name="incluirUsuario[1](1002, lucy, lucy, carter, lucycarter@teste.com, 654321, 11888888888, 0)" classname="datadriven.UserDD" time="0.86"/>
-  <system-out><![CDATA[Request method:	POST
+  <testcase name="incluirUsuario[0](1001, Amandinha, Amanda, Ramos, teste@teste.com.br, 100000, 81999999999, 0)" classname="datadriven.UserDD" time="25.532"/>
+  <testcase name="incluirUsuario[1](1002, lucy, lucy, carter, lucycarter@teste.com, 200000, 11888888888, 0)" classname="datadriven.UserDD" time="1.273"/>
+  <testcase name="incluirUsuario[2](1003, lino, lino, smith, linosmith@teste.com, 300000, 11997567742, 0)" classname="datadriven.UserDD" time="1.367"/>
+  <testcase name="incluirUsuario[3](1004, valen, valen, vieira, valenvieira@teste.com, 400000, 11999999999, 0)" classname="datadriven.UserDD" time="1.362"/>
+  <testcase name="incluirUsuario[4](1005, lia, lia, bonita, liabonita@teste.com.br, 500000, 8799999999, 0)" classname="datadriven.UserDD" time="1.038"/>
+  <testcase name="incluirUsuario[5](1006, osvaldo, osvaldo, vieira, osvaldovieira@teste.com, 600000, 81999997777, 0)" classname="datadriven.UserDD" time="0.96"/>
+  <testcase name="incluirUsuario[6](1007, drica, drica, morais, dricamorais@teste.com.br, 700000, 89777775000, 0)" classname="datadriven.UserDD" time="0.899"/>
+  <testcase name="incluirUsuario[7](1008, caio, caio, castro, caiocastro@teste.com.br, 800000, 9099999999, 0)" classname="datadriven.UserDD" time="0.972"/>
+  <testcase name="incluirUsuario[8](1009, paula, paula, moraes, paulamoraes@teste.com.br, 900000, 81999990000, 0)" classname="datadriven.UserDD" time="0.859"/>
+  <testcase name="incluirUsuario[9](1010, manu, manu, gavassi, manugavassi@teste.com.br, 1000000, 81999999999, 0)" classname="datadriven.UserDD" time="0.972"/>
+  <system-out><![CDATA[Data e hora : 2021-09-27 17-03
+Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/user
 Proxy:			<none>
 Request params:	<none>
@@ -18,7 +27,7 @@ Body:
 {
     "firstName": "Amanda",
     "lastName": "Ramos",
-    "password": "123456",
+    "password": "100000",
     "userStatus": "0",
     "phone": "81999999999",
     "id": "1001",
@@ -26,7 +35,7 @@ Body:
     "username": "Amandinha"
 }
 HTTP/1.1 200 OK
-Date: Wed, 22 Sep 2021 03:09:21 GMT
+Date: Mon, 27 Sep 2021 20:03:19 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -40,7 +49,11 @@ Server: Jetty(9.2.9.v20150224)
     "type": "unknown",
     "message": "1001"
 }
-o userID Ã© 1001
+o userID é 1001
+Esta é a linha de numero 1
+Total de registros :1
+Soma tota é: 100000.0
+Data e hora : 2021-09-27 17-03
 Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/user
 Proxy:			<none>
@@ -56,7 +69,7 @@ Body:
 {
     "firstName": "lucy",
     "lastName": "carter",
-    "password": "654321",
+    "password": "200000",
     "userStatus": "0",
     "phone": "11888888888",
     "id": "1002",
@@ -64,7 +77,7 @@ Body:
     "username": "lucy"
 }
 HTTP/1.1 200 OK
-Date: Wed, 22 Sep 2021 03:09:23 GMT
+Date: Mon, 27 Sep 2021 20:03:25 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -78,7 +91,346 @@ Server: Jetty(9.2.9.v20150224)
     "type": "unknown",
     "message": "1002"
 }
-o userID Ã© 1002
+o userID é 1002
+Esta é a linha de numero 2
+Total de registros :2
+Soma tota é: 300000.0
+Data e hora : 2021-09-27 17-03
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "lino",
+    "lastName": "smith",
+    "password": "300000",
+    "userStatus": "0",
+    "phone": "11997567742",
+    "id": "1003",
+    "email": "linosmith@teste.com",
+    "username": "lino"
+}
+HTTP/1.1 200 OK
+Date: Mon, 27 Sep 2021 20:03:26 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1003"
+}
+o userID é 1003
+Esta é a linha de numero 3
+Total de registros :3
+Soma tota é: 600000.0
+Data e hora : 2021-09-27 17-03
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "valen",
+    "lastName": "vieira",
+    "password": "400000",
+    "userStatus": "0",
+    "phone": "11999999999",
+    "id": "1004",
+    "email": "valenvieira@teste.com",
+    "username": "valen"
+}
+HTTP/1.1 200 OK
+Date: Mon, 27 Sep 2021 20:03:28 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1004"
+}
+o userID é 1004
+Esta é a linha de numero 4
+Total de registros :4
+Soma tota é: 1000000.0
+Data e hora : 2021-09-27 17-03
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "lia",
+    "lastName": "bonita",
+    "password": "500000",
+    "userStatus": "0",
+    "phone": "8799999999",
+    "id": "1005",
+    "email": "liabonita@teste.com.br",
+    "username": "lia"
+}
+HTTP/1.1 200 OK
+Date: Mon, 27 Sep 2021 20:03:29 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1005"
+}
+o userID é 1005
+Esta é a linha de numero 5
+Total de registros :5
+Soma tota é: 1500000.0
+Data e hora : 2021-09-27 17-03
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "osvaldo",
+    "lastName": "vieira",
+    "password": "600000",
+    "userStatus": "0",
+    "phone": "81999997777",
+    "id": "1006",
+    "email": "osvaldovieira@teste.com",
+    "username": "osvaldo"
+}
+HTTP/1.1 200 OK
+Date: Mon, 27 Sep 2021 20:03:30 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1006"
+}
+o userID é 1006
+Esta é a linha de numero 6
+Total de registros :6
+Soma tota é: 2100000.0
+Data e hora : 2021-09-27 17-03
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "drica",
+    "lastName": "morais",
+    "password": "700000",
+    "userStatus": "0",
+    "phone": "89777775000",
+    "id": "1007",
+    "email": "dricamorais@teste.com.br",
+    "username": "drica"
+}
+HTTP/1.1 200 OK
+Date: Mon, 27 Sep 2021 20:03:31 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1007"
+}
+o userID é 1007
+Esta é a linha de numero 7
+Total de registros :7
+Soma tota é: 2800000.0
+Data e hora : 2021-09-27 17-03
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "caio",
+    "lastName": "castro",
+    "password": "800000",
+    "userStatus": "0",
+    "phone": "9099999999",
+    "id": "1008",
+    "email": "caiocastro@teste.com.br",
+    "username": "caio"
+}
+HTTP/1.1 200 OK
+Date: Mon, 27 Sep 2021 20:03:32 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1008"
+}
+o userID é 1008
+Esta é a linha de numero 8
+Total de registros :8
+Soma tota é: 3600000.0
+Data e hora : 2021-09-27 17-03
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "paula",
+    "lastName": "moraes",
+    "password": "900000",
+    "userStatus": "0",
+    "phone": "81999990000",
+    "id": "1009",
+    "email": "paulamoraes@teste.com.br",
+    "username": "paula"
+}
+HTTP/1.1 200 OK
+Date: Mon, 27 Sep 2021 20:03:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1009"
+}
+o userID é 1009
+Esta é a linha de numero 9
+Total de registros :9
+Soma tota é: 4500000.0
+Data e hora : 2021-09-27 17-03
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "manu",
+    "lastName": "gavassi",
+    "password": "1000000",
+    "userStatus": "0",
+    "phone": "81999999999",
+    "id": "1010",
+    "email": "manugavassi@teste.com.br",
+    "username": "manu"
+}
+HTTP/1.1 200 OK
+Date: Mon, 27 Sep 2021 20:03:34 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1010"
+}
+o userID é 1010
+Esta é a linha de numero 10
+Total de registros :10
+Soma tota é: 5500000.0
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

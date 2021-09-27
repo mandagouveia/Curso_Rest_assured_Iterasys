@@ -1,10 +1,9 @@
 package datadriven;
 
 import org.json.JSONObject;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import utils.Data;
+import utils.Log;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,6 +19,9 @@ import static org.hamcrest.Matchers.is;
 public class UserDD {
     String uri = "https://petstore.swagger.io/v2/user";
     Data data; //objeto que representa a classe utils.Data
+    Log log;
+    int contador;
+    double soma;
 
     @DataProvider
     public Iterator<Object[]> provider() throws IOException {
@@ -38,10 +40,17 @@ public class UserDD {
 
     }
 
-    // 3.2 - MÃ©todos e FunÃ§Ãµes
-    @BeforeMethod
+    // 3.2 - Métodos e Funções
+    @BeforeClass
     public void setup(){
         data = new Data();
+        log = new Log();
+    }
+
+    @AfterMethod
+    public void tearDown(){
+        System.out.println("Total de registros :"+ contador);
+        System.out.println("Soma tota é: "+soma);
 
     }
 
@@ -54,7 +63,9 @@ public class UserDD {
             String email,
             String password,
             String phone,
-            String userStatus) {
+            String userStatus) throws IOException {
+
+        log.iniciarLog();
 
         String jsonBody = new JSONObject()
 
@@ -86,7 +97,13 @@ public class UserDD {
                 .extract()
                         .path("message");
 
-        System.out.println("o userID Ã© " + userId);
+        contador += 1;
+        System.out.println("o userID é " + userId);
+        System.out.println("Esta é a linha de numero "+contador);
+
+        soma = soma + Double.parseDouble(password);
+
+
     }
 
 
