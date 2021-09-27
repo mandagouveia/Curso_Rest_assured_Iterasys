@@ -1,0 +1,3 @@
+* linguistic-vendored
+*.java linguistic-vendored=false
+*.js linguist-language=Java
